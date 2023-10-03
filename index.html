@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>User Location</title>
+</head>
+<body>
+    <h1>Post Office Application</h1>
+    <p>This Application allows you to extract information about<br> the nearest Post Offices based on your location.</p>
+
+    <div id="photo"><img src="undraw_messenger_re_8bky 1.svg"></div>
+
+    <div class="middle">
+        <p>Your Current IP Address is <span id="ipAddress"></span></p>
+        
+        <button id="btn">Get Started</button>
+    </div>
+
+    <div id="map"></div>
+
+    <h2>Search Post Offices</h2>
+    <input type="text" id="searchBox" placeholder="Search by name" oninput="filterPostOffices()">
+    <ul id="postOffices"></ul> 
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('btn').addEventListener('click', function() {
+            window.open('result.html', '_blank');
+        });
+    </script>
+</body>
+</html> 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
